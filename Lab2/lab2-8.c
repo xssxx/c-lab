@@ -22,6 +22,7 @@ int main() {
     fgets(cheese_str, 3, stdin);
     printf("Extra mushroom? (1=yes, 0=no): ");
     fgets(mushroom_str, 3, stdin);
+
     puts("~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
     size = atoi(size_str);
@@ -31,7 +32,6 @@ int main() {
 
     // set diameter
     short diameter;
-
     switch(size) {
         case 1: diameter = 10; break; // S
         case 2: diameter = 16; break; // M
@@ -40,9 +40,8 @@ int main() {
 
     // set area
     float area = M_PI * pow(diameter, 2) / 4.0;
-
-    float extracost = 0;
     // add extra cost
+    float extracost = 0;
     if (pepperoni) extracost += 0.50;
     if (cheese) extracost += 0.25;
     if (mushroom) extracost += 0.30;
