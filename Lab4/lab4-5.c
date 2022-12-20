@@ -30,8 +30,6 @@ void reflection(int len, int size) {
 int main() {
     int size, height;
     scanf("%d", &size); 
-    
-    height = size * 2 - 1;
 
     if(size <= 0 || size > 26) {
         puts("-");
