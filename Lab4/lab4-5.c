@@ -40,7 +40,7 @@ int main() {
 
     // first loop print height
     for(int i = size-1; i >= 1-size; i--) {
-        // second loop print alphabe
+        // second loop print alphabet
         reflection(size-abs(i), size);
     }
 
