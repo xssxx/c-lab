@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     float target, collected, temp = 0;
     int day = 1;
     
