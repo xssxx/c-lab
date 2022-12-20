@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 
 void reflection(int len, int size) {
     int ascii = 97 + size - 1; // a
@@ -23,7 +22,6 @@ void reflection(int len, int size) {
     for(int j = 0; j < (size*2) - (len*2); j++) {
         printf("-");
     }
-
     printf("\n");
 }
 
