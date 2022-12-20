@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void reflection(int len, int size) {
-    int ascii = 97 + size - 1; // a
+    int ascii = 97 + size - 1;
 
     // left space
     for(int j = 0; j < (size*2) - (len*2); j++) {
