@@ -9,9 +9,7 @@ int count_target(int n, int target) {
     int count = 0;
     while (n >= 10) {
         int digit = n % 10;
-        if (digit == target) {
-            count++;
-        }
+        if (digit == target) count++;
         n /= 10;
     }
 
