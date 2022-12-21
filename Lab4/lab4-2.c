@@ -9,7 +9,6 @@ int is_prime(int x) {
     return 1;
 }
 
-
 int main() {
     char input[5];
     fgets(input, 5, stdin);
