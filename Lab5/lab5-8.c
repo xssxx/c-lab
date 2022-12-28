@@ -23,12 +23,6 @@ void down(int count, int arr[], int len) {
     }
 }
 
-void printArr(int arr[], int len) {
-    for(int i = 0; i < len; i++) {
-        printf("%d ", arr[i]);
-    }
-}
-
 int main() {
     int stairs, input, round = 1;
     printf("Input number of stairs: ");
