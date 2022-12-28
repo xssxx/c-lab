@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 void up(int count, int arr[], int len) {
-    // ถ้าสุดแล้วไม่เดินต่อ
     for(int j = 0; j < count; j++) {
+        // ถ้าสุดแล้วไม่เดินต่อ
         if(arr[0] == 2) return;
         for(int i = 0; i < len-1; i++) {
             arr[i] = arr[i + 1];
@@ -13,8 +13,8 @@ void up(int count, int arr[], int len) {
 }
 
 void down(int count, int arr[], int len) {
-    // ถ้าสุดแล้วไม่เดินต่อ
     for(int j = 0; j < count; j++) {
+        // ถ้าสุดแล้วไม่เดินต่อ
         if(arr[len-1] == 1) return;
         for(int i = len-1; i > 0; i--) {
             arr[i] = arr[i-1];
