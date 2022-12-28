@@ -50,9 +50,9 @@ int main() {
         printf("Input step command: ");
         scanf("%d", &input);
         if(input >= 0) {
-            up(input ,arr, stairs);
+            up(input, arr, stairs);
         } else {
-            down(abs(input) , arr, stairs);
+            down(abs(input), arr, stairs);
         }
     }
 
