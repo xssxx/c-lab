@@ -49,7 +49,7 @@ int main() {
         // print step input
         printf("Input step command: ");
         scanf("%d", &input);
-        if(input >= 0) {
+        if(input > 0) {
             up(input, arr, stairs);
         } else {
             down(abs(input), arr, stairs);
