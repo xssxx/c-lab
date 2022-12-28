@@ -3,12 +3,12 @@
 int main() {
     int n, i, j;
     printf("Enter the number of rows or columns: ");
-    scanf("%d",&n);
+    scanf("%d", &n);
     int a[n][n];
 
     for(i = 0; i < n; i++) {
         for(j = 0; j < n; j++) {
-            a[i][j] = j+1+i;
+            a[i][j] = j + 1 + i;
         }
     }
 
