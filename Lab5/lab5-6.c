@@ -21,8 +21,8 @@ int main() {
 
     printf("Array c: ");
     for (i = 0; i < 10; i++)
-        printf("%d ", c[i]);
-
+        printf("%d ", c[i])
+        
     printf("\n");
     return 0;
 }
