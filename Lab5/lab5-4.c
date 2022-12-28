@@ -14,7 +14,6 @@ int main() {
         }
         frac += 2;
     }
-
     printf("%.10lf", total);
 
     return 0;
