@@ -2,6 +2,7 @@
 
 int main() {
     int i, a[5], b[5], c[10];
+    
     puts("Enter array a:");
     for(i = 0; i < 5; i++) {
         printf("Please enter an integer: ");
