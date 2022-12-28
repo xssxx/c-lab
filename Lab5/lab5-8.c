@@ -32,6 +32,7 @@ int main() {
     for(int i = 0; i < stairs; i++) {
         arr[i] = 0;
     }
+    // สร้าง array บันได [0, 0, 2, 1] == [บันไดเปล่า, บันไดเปล่า, หัว, ขา]
     arr[stairs-1] = 1;
     arr[stairs-2] = 2;
 
