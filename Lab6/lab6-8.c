@@ -32,7 +32,7 @@ int main() {
 				count++; // add count by 1
 				killerPtr++; // move to next element
 			}
-			if (j == m && *killerPtr == 0)
+			if (count == m && *killerPtr == 0)
 				killerPtr = &prisoners[0];
 		}
 		// append number of prisoner who is killed to array `killed`
