@@ -32,17 +32,14 @@ int main() {
 				count++; // add j
 				killerPtr++; // move to next element
 			}
-			if (j == m && *killerPtr == 0) {
+			if (j == m && *killerPtr == 0)
 				killerPtr = &prisoners[0];
-			}
 		}
 		// append number of prisoner who is killed to array `killed`
 		killed[i] = *killerPtr;
 		// remove number killed prisoner from array `prisoners`
 		removeKilled(&prisoners[0], numPrisoners, *killerPtr);
-
 	}
-
 	for (i = 0; i < numPrisoners; i++) {
 		printf("%d ", killed[i]);
 	}
