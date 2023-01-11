@@ -29,7 +29,7 @@ int main() {
 			if (*killerPtr == 0) {
 				killerPtr = &prisoners[0];
 			} else {
-				count++; // add j
+				count++; // add count by 1
 				killerPtr++; // move to next element
 			}
 			if (j == m && *killerPtr == 0)
