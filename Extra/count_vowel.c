@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 int is_vowel(char ch) {
-    switch(tolower(ch)) {
+    switch (tolower(ch)) {
         case 'a': case 'e': case 'i': case 'o': case 'u':
             return 1;
     }
