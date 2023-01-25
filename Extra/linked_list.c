@@ -34,8 +34,6 @@ int main() {
         printf("%d ", head->data);
         head = head->next;
     }
-
     
-
     return 0;
 }
