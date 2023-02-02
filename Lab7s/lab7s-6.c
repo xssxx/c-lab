@@ -8,10 +8,10 @@ int charcount(char *s) {
 
 void charweave(char *s, char *result) {
     int i, n = charcount(s);
-
+    // left
     for (i = 0; i < n; i++, result++) {
         *result = (i % 2 == 0) ? s[i/2] : s[n-1-(i/2)];
-    }
+    } // right
     for (i = i - 1; i >= 0; i--, result++) {
         *result = (i % 2 == 0) ? s[i/2] : s[n-1-(i/2)];
     }
