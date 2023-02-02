@@ -2,36 +2,36 @@
 
 void roman2arabic(char input[], char output[]) {
     while (*input) {
-        if (*input == 'I' && *(input+1) == 'I' && *(input+2) == 'I') {
-            input += 3;
-            *output = '3';
-        } else if (*input == 'I' && *(input+1) == 'I') {
-            input += 2;
-            *output = '2';
-        } else if (*input == 'I' && *(input+1) == 'X') {
-            input += 2;
-            *output = '9';
-        } else if (*input == 'I') {
+        if (*input == 'I' && *(input+1) != 'I' && *(input+1) != 'V' && *(input+1) != 'X') {
             input += 1;
             *output = '1';
+        } else if (*input == 'I' && *(input+1) == 'I' && *(input+2) != 'I' ) {
+            input += 2;
+            *output = '2';
+        } else if (*input == 'I' && *(input+1) == 'I' && *(input+2) == 'I' ) {
+            input += 3;
+            *output = '3';
         } else if (*input == 'I' && *(input+1) == 'V') {
             input += 2;
             *output = '4';
-        } else if (*input == 'V' && *(input+1) == 'I' && *(input+2) == 'I' && *(input+3) == 'I') {
-            input += 3;
-            *output = '8';
-        } else if (*input == 'V' && *(input+1) == 'I' && *(input+2) == 'I') {
-            input += 2;
-            *output = '7';
-        } else if (*input == 'V' && *(input+1) == 'I') {
-            input += 2;
-            *output = '6';
-        } else if (*input == 'V') {
+        } else if (*input == 'V' && *(input+1) != 'I') {
             input += 1;
             *output = '5';
+        } else if (*input == 'V' && *(input+1) == 'I' && *(input+2) != 'I') {
+            input += 2;
+            *output = '6';
+        } else if (*input == 'V' && *(input+1) == 'I' && *(input+2) == 'I' && *(input+3) != 'I') {
+            input += 3;
+            *output = '7';
+        } else if (*input == 'V' && *(input+1) == 'I' && *(input+2) == 'I' && *(input+3) == 'I') {
+            input += 4;
+            *output = '8';
+        } else if (*input == 'I' && *(input+1) == 'X') {
+            input += 2;
+            *output = '9';
         } else {
-            *output = *input;   
-            input += 1;
+            *output = *input;
+            input++;
         }
         output++;
     }
