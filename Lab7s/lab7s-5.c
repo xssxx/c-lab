@@ -13,12 +13,12 @@ char *stoupper(const char *str) {
 }
 
 int main(){
-	char s[100];
-	char* result;
+    char s[100];
+    char* result;
 
-	scanf("%s",s);
-	result = stoupper(s);
+    scanf("%s",s);
+    result = stoupper(s);
     if (result == s) printf("ERROR.\n");
     
-	printf("%s\n",result);
+    printf("%s\n",result);
 }
