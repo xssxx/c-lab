@@ -11,8 +11,8 @@ typedef struct {
 
 // รับ 1. struct ที่มีข้อมูลนักเรียน
 // รับ 2. ขนาด array of struct
-// รับ 3. struct pointer ที่เตรียมรอเอาไว้ชี้คนได้ตะแนน mid มากสุด
-// รับ 4. struct pointer ที่เตรียมรอเอาไว้ชี้คนได้ตะแนน final มากสุด
+// รับ 3. struct pointer ที่เตรียมรอเอาไว้ชี้คนได้คะแนน mid มากสุด
+// รับ 4. struct pointer ที่เตรียมรอเอาไว้ชี้คนได้คะแนน final มากสุด
 // ต้องรับเป็น ** เพราะ ตัวที่รับมาเป็น struct pointer ที่เอาไว้รอชี้ array of struct ของคนที่มีค่ามากสุด
 // ซึ่ง array ก็เป็น pointer อยู่แล้ว จึงต้องรับเป็น ** (งงอยู่ ???)
 void findTop(StudentRecord pRec[], int size, StudentRecord **topMid, StudentRecord **topFin) {
