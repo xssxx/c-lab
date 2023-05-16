@@ -17,7 +17,7 @@ struct complex multiply_complex(struct complex C, struct complex D) {
     ans.a = (C.a * D.a) - (C.b * D.b); 
     ans.b = (C.a * D.b) + (C.b * D.a);
     return ans;
-    }
+}
 
 void print_complex(char *prop, struct complex num) {
     printf("%s", prop);
